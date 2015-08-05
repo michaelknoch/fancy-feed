@@ -10,21 +10,21 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/states/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .state('instagram', {
         url: '/instagram',
-        templateUrl: 'app/main/main.html',
-        controller: 'TwitterCtrl',
-        controllerAs: 'tc'
+        templateUrl: 'app/states/main/main.html',
+        controller: 'InstagramCtrl',
+        controllerAs: 'ic'
       })
       .state('twitter', {
         url: '/twitter',
-        templateUrl: 'app/instagram/instagram.html',
-        controller: 'InstagramCtrl',
-        controllerAs: 'ic'
+        templateUrl: 'app/states/instagram/instagram.html',
+        controller: 'TwitterCtrl',
+        controllerAs: 'tc'
       });
 
     $urlRouterProvider.otherwise('/');
