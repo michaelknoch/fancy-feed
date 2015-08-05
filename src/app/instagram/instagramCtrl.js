@@ -3,10 +3,10 @@
 
   angular
     .module('fancyFeed')
-    .controller('MainController', MainController);
+    .controller('InstagramCtrl', InstagramCtrl);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
-    
+  function InstagramCtrl($timeout) {
+
   }
 })();
