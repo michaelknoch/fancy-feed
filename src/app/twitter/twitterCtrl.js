@@ -3,10 +3,10 @@
 
   angular
     .module('fancyFeed')
-    .controller('MainController', MainController);
+    .controller('TwitterCtrl', TwitterCtrl);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
-    
+  function TwitterCtrl($timeout) {
+
   }
 })();
