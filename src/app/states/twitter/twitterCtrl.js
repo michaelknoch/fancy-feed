@@ -6,12 +6,28 @@
     .controller('TwitterCtrl', TwitterCtrl);
 
   /** @ngInject */
-  function TwitterCtrl(TwitterService) {
+  function TwitterCtrl(TwitterService, $scope) {
 
-    TwitterService.getRecentPosts('donau2015')
+    $scope.tweets = [];
+
+    TwitterService.getRecentPosts('boateng')
 
       .then(function (result) {
-        console.info(result.data);
+        
+        var tmp = [];
+
+        result.data.statuses.forEach(function (item) {
+
+          tmp.push({
+            text: item.text,
+            name: item.user.name
+          });
+
+        });
+
+        $scope.tweets = tmp;
+        console.info($scope.tweets);
+
       })
       .catch(function (result) {
         console.log('error');
