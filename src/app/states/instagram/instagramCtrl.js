@@ -6,15 +6,17 @@
     .controller('InstagramCtrl', InstagramCtrl);
 
   /** @ngInject */
-  function InstagramCtrl($timeout) {
+  function InstagramCtrl(InstagramService) {
 
-    var feed = new Instafeed({
-      get: 'tagged',
-      tagName: 'donau2015',
-      clientId: 'bc888d9b72154876aa0ace1a420a2991'
-    });
-    feed.run();
-    console.info('yolo');
+
+    InstagramService.getRecentImages('donau2015')
+
+      .then(function (result) {
+        console.info(result.data);
+      })
+      .catch(function (result) {
+        console.log('error');
+      })
 
   }
 })();
