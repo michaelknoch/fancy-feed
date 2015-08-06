@@ -16,13 +16,13 @@
       })
       .state('instagram', {
         url: '/instagram',
-        templateUrl: 'app/states/main/main.html',
+        templateUrl: 'app/states/instagram/instagram.html',
         controller: 'InstagramCtrl',
         controllerAs: 'ic'
       })
       .state('twitter', {
         url: '/twitter',
-        templateUrl: 'app/states/instagram/instagram.html',
+        templateUrl: 'app/states/twitter/twitter.html',
         controller: 'TwitterCtrl',
         controllerAs: 'tc'
       });
