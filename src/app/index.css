@@ -13,7 +13,10 @@
   width: 50px;
 }
 
-
 body {
   background-color: #fff;
+}
+
+#instafeed img {
+  max-width: 100%;
 }
