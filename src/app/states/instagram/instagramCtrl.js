@@ -22,7 +22,7 @@
           tmp.push({
             path: item.images.standard_resolution.url,
             name: item.user.full_name
-          })
+          });
 
         });
 
