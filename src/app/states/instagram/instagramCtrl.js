@@ -13,7 +13,6 @@
     InstagramService.getRecentImages('donau2015')
 
       .then(function (result) {
-        $scope.instagrams = result.data;
 
         var tmp = [];
 
@@ -27,7 +26,6 @@
         });
 
         $scope.instagrams = tmp;
-        console.info($scope.instagrams);
 
       })
       .catch(function (result) {
