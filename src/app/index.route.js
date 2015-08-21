@@ -6,7 +6,7 @@
     .config(routeConfig);
 
   /** @ngInject */
-  function routeConfig($stateProvider, $urlRouterProvider) {
+  function routeConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -26,6 +26,8 @@
         controller: 'TwitterCtrl',
         controllerAs: 'tc'
       });
+
+    $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise('/instagram');
   }
