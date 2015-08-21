@@ -27,7 +27,7 @@
         controllerAs: 'tc'
       });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/instagram');
   }
 
 })();
