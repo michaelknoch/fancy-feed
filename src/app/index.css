@@ -1,3 +1,4 @@
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -13,10 +14,58 @@
   width: 50px;
 }
 
-body {
-  background-color: #fff;
-}
-
 #instafeed img {
   max-width: 100%;
+}
+
+.instagram-container {
+  max-width: 550px;
+  height: 100vh;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.flexslider {
+  border: none;
+  background-color: none;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.flexslider img {
+  border: 3px solid white;
+  max-height: 90vh;
+  width: auto !important;
+}
+
+.flexslider h3 {
+  color: #1389be;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+
+.right {
+  float: right;
+}
+
+.caption {
+  padding-top: 30vh;
+}
+
+.tag {
+  margin-right: 5px;
+  background-color: #1389be;
+  color: white;
+  font-size: 40px;
+  float: left;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
 }
