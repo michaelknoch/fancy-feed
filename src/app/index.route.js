@@ -8,12 +8,7 @@
   /** @ngInject */
   function routeConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
-      .state('home', {
-        url: '/',
-        templateUrl: 'app/states/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      })
+
       .state('instagram', {
         url: '/instagram',
         templateUrl: 'app/states/instagram/instagram.html',
@@ -27,9 +22,9 @@
         controllerAs: 'tc'
       });
 
+    $urlRouterProvider.otherwise('/instagram');
     $locationProvider.html5Mode(true);
 
-    $urlRouterProvider.otherwise('/instagram');
   }
 
 })();
