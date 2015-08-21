@@ -1,7 +1,7 @@
-(function() {
+(function () {
   'use strict';
 
   angular
-    .module('fancyFeed', ['ui.router', 'ui.bootstrap']);
+    .module('fancyFeed', ['ui.router', 'angular-flexslider']);
 
 })();
