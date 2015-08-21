@@ -1,33 +1,31 @@
 <div class="container-fluid welcome-container">
 
-  <div class="container">
+
+  <div class="row">
 
 
-    <div class="row">
+    <flex-slider slideshow-speed="20000" control-nav="false" direction-nav="false" keyboard="false"
+                 animation-loop="true"
+                 slide="slide in instagrams track by $index">
+      <li>
+        <div class="col-sm-8">
+          <img class="right" ng-src="{{slide.path}}">
+        </div>
 
+        <div class="col-sm-4 caption">
+          <h3>{{slide.name}}</h3>
 
-      <flex-slider slideshow-speed="20000" control-nav="false" direction-nav="false" keyboard="false"
-                   animation-loop="true"
-                   slide="slide in instagrams track by $index">
-        <li>
-          <div class="col-sm-8">
-            <img class="right" ng-src="{{slide.path}}">
-          </div>
+          <span ng-if="slide.tags.length != 0" class="tag" ng-repeat="tag in slide.tags | limitTo:3">#{{tag}}</span>
 
-          <div class="col-sm-4 caption">
-            <h3>{{slide.name}}</h3>
+          <p ng-if="slide.description" class="description">{{slide.description}}</p>
 
-            <span ng-if="slide.tags.length != 0" class="tag" ng-repeat="tag in slide.tags | limitTo:3">#{{tag}}</span>
-            <p ng-if="slide.description" class="description">{{slide.description}}</p>
+        </div>
+      </li>
+    </flex-slider>
 
-          </div>
-        </li>
-      </flex-slider>
-
-    </div>
   </div>
+</div>
 
 
 </div>
 
-</div>
