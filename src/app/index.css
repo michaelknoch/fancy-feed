@@ -36,7 +36,7 @@
 
 .flexslider img {
   border: 3px solid white;
-  max-height: 90vh;
+  height: 90vh !important;
   width: auto !important;
 }
 
@@ -62,10 +62,19 @@
   float: left;
   margin-top: 5px;
   padding: 5px;
-  border-radius: 15px;
 }
 
 h3 {
   font-size: 40px;
   padding-bottom: 20px;
+}
+
+.description {
+  background-color: #1389be;
+  font-size: 40px;
+  padding: 5px;
+  margin-top: 5px;
+  float: left;
+  color: white;
+  line-height: 45px;
 }
