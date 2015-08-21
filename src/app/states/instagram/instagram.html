@@ -6,7 +6,7 @@
     <div class="row">
 
 
-      <flex-slider slideshow-speed="17000" control-nav="false" direction-nav="false" keyboard="false"
+      <flex-slider slideshow-speed="20000" control-nav="false" direction-nav="false" keyboard="false"
                    animation-loop="true"
                    slide="slide in instagrams track by $index">
         <li>
@@ -17,7 +17,8 @@
           <div class="col-sm-4 caption">
             <h3>{{slide.name}}</h3>
 
-            <span class="tag" ng-repeat="tag in slide.tags | limitTo:3">#{{tag}}</span>
+            <span ng-if="slide.tags.length != 0" class="tag" ng-repeat="tag in slide.tags | limitTo:3">#{{tag}}</span>
+            <p ng-if="slide.description" class="description">{{slide.description}}</p>
 
           </div>
         </li>
