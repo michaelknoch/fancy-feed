@@ -1,3 +1,6 @@
+body {
+  background-color: #191919;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -29,13 +32,12 @@
 
 .flexslider {
   border: none;
-  background-color: none;
+  background: none !important;
   margin: 0;
   padding-top: 30px;
 }
 
 .flexslider img {
-  border: 3px solid white;
   height: 90vh !important;
   width: auto !important;
 }
